@@ -91,6 +91,17 @@ a {
  padding: 94px 0px;
 }
 
+.section-title {
+ text-align: center;
+ font-weight: 700;
+ font-size: 36px;
+ line-height: 1.17;
+}
+
+.section-title__indent-bottom {
+ margin-bottom: 50px;
+}
+
 /* Hidden element. Example h1-h6 */
 .hidden {
  position: absolute;
@@ -141,7 +152,7 @@ a {
  line-height: 1.19;
 }
 
-.logo--indent-right {
+.header-logo__indent-right {
  margin-right: 93px;
 }
 
@@ -149,16 +160,16 @@ a {
  color: var(--logo-color);
 }
 
-.nav__list {
+.header-nav__list {
  display: flex;
  padding-left: 0px;
 }
 
-.nav__item:not(:last-child) {
+.header-nav__item:not(:last-child) {
  margin-right: 50px;
 }
 
-.nav__link {
+.header-nav__link {
  display: block;
  padding-top: 32px;
  padding-bottom: 32px;
@@ -172,16 +183,16 @@ a {
  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav__link:focus,
-.nav__link:hover {
+.header-nav__link:focus,
+.header-nav__link:hover {
  color: var(--hover-link-color);
 }
 
-.nav__link--is-active {
+.header-nav__link--is-active {
  position: relative;
 }
 
-.nav__link--is-active::after {
+.header-nav__link--is-active::after {
  display: inline-block;
  position: absolute;
  content: "";
@@ -198,7 +209,7 @@ a {
  align-items: center;
 }
 
-.header-contacts--indent-left {
+.header-contacts__indent-left {
  margin-left: auto;
 }
 
@@ -230,11 +241,11 @@ a {
  fill: currentColor;
 }
 
-.header-contacts__icon--indent-right {
+.header-contacts__icon-indent-right {
  margin-right: 10px;
 }
 
-.nav__link--is-active {
+.header-nav__link--is-active {
  color: var(--hover-link-color);
 }
 
@@ -261,7 +272,7 @@ a {
  background-size: cover;
 }
 
-.order__overlay--indent-right-left {
+.order__overlay-indent-right-left {
  margin-left: auto;
  margin-right: auto;
 }
@@ -277,7 +288,7 @@ a {
  text-transform: uppercase;
 }
 
-.order__title--indent {
+.order__title-indent {
  margin-top: 0;
  margin-left: auto;
  margin-bottom: 30px;
@@ -310,7 +321,7 @@ a {
  background-color: #f5f4fa;
 }
 
-.benefits__icon-box--indet-bottom {
+.benefits__icon-box-indet-bottom {
  margin-bottom: 30px;
 }
 
@@ -327,7 +338,7 @@ a {
  text-transform: uppercase;
 }
 
-.benefits__subtitle--indet-bottom {
+.benefits__subtitle-indet-bottom {
  margin-bottom: 10px;
 }
 
@@ -342,17 +353,6 @@ a {
 
 .we-do {
  padding-top: 0px;
-}
-
-.we-do__title {
- text-align: center;
- font-weight: 700;
- font-size: 36px;
- line-height: 1.17;
-}
-
-.we-do__title--indent-bottom {
- margin-bottom: 50px;
 }
 
 .we-do__list {
@@ -429,7 +429,7 @@ a {
  line-height: 1.19;
 }
 
-.team__name--indent-bottom {
+.team__name-indent-bottom {
  margin-bottom: 10px;
 }
 
@@ -439,7 +439,7 @@ a {
  color: var(--secondary-color);
 }
 
-.team__profession--indent-bottom {
+.team__profession-indent-bottom {
  margin-bottom: 16px;
 }
 
@@ -476,17 +476,6 @@ a {
 /* ------------------------------ */
 /* ======== Our clients  =========*/
 /* ------------------------------ */
-.clients__title {
- text-align: center;
-
- font-weight: 700;
- font-size: 36px;
- line-height: 1.17;
-}
-
-.clients__title--indent-bottom {
- margin-bottom: 50px;
-}
 
 .clients__list {
  display: flex;
@@ -527,6 +516,20 @@ a {
  padding: 60px 0;
 }
 
+.footer-title-box {
+ font-weight: 700;
+ font-size: 14px;
+ line-height: 1.14;
+
+ color: var(--thirdy-color);
+
+ text-transform: uppercase;
+}
+
+.footer-title-box__indent-bottom {
+ margin-bottom: 20px;
+}
+
 .footer__box-main {
  display: flex;
  align-items: baseline;
@@ -540,7 +543,7 @@ a {
  color: var(--thirdy-color);
 }
 
-.address--indent-top {
+.address__indent-top {
  margin-top: 20px;
 }
 
@@ -577,27 +580,16 @@ a {
  margin-right: auto;
 }
 
-.social-title {
- margin-bottom: 20px;
- font-weight: 700;
- font-size: 14px;
- line-height: 1.14;
-
- color: var(--thirdy-color);
-
- text-transform: uppercase;
-}
-
-.social-list {
+.social__list {
  display: flex;
  column-gap: 10px;
 }
 
-.social-link {
- display: flex;
+.social__link {
+ /* display: flex; */
  justify-content: center;
  align-items: center;
- /* margin-right: 10px; */
+
  width: 44px;
  height: 44px;
  color: var(--thirdy-color);
@@ -607,27 +599,18 @@ a {
  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover,
-.social-link:focus {
+.social__link:hover,
+.social__link:focus {
  background-color: #2196f3;
 }
 
-.social-logo {
+.social__logo {
  fill: currentColor;
 }
 
 /* ------------------------------ */
 /* ======= Footer subscribe ======*/
 /* ------------------------------ */
-
-.subscrib-title {
- font-weight: 700;
- font-size: 14px;
- line-height: 1.14;
- text-transform: uppercase;
-
- color: var(--thirdy-color);
-}
 
 .subscrib-form {
  position: relative;
@@ -636,7 +619,7 @@ a {
  margin-right: auto;
 }
 
-.subscrib-email {
+.subscrib-form__email {
  padding-left: 15px;
  margin-right: 12px;
  width: 358px;
@@ -662,11 +645,11 @@ a {
  opacity: 0;
 } */
 
-.subscrib-email:not(:placeholder-shown) + .subscrib-label {
+.subscrib-form__email:not(:placeholder-shown) + .subscrib-label {
  opacity: 0;
 }
 
-.subscrib-label {
+.subscrib-form__label {
  position: absolute;
  top: 50%;
  left: 40px;
@@ -677,36 +660,20 @@ a {
 
  color: var(--secondary-color);
 }
-.subscrib-button {
+.subscrib-form__button {
  display: flex;
  align-items: center;
  justify-content: center;
  margin: 0;
  padding: 10px 28px;
- min-width: 200px;
-
- font-family: inherit;
- font-weight: 700;
- font-size: var(--secondary-font-size);
- line-height: 1.88;
-
- color: var(--thirdy-color);
- letter-spacing: 0.06em;
- background: var(--hover-link-color);
- border: 0;
- box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
- border-radius: 4px;
- cursor: pointer;
-
- transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscrib-button:hover,
-.subscrib-button:focus {
+.subscrib-form__button:hover,
+.subscrib-form__button:focus {
  background-color: var(--hover-button);
 }
 
-.subscrib-icon {
+.subscrib-form__icon {
  fill: currentColor;
  margin-left: 10px;
 }
@@ -880,11 +847,11 @@ a {
  pointer-events: none;
 }
 
-.modal-order.is-hidden .modal-area {
+.modal-order.is-hidden .modal-order__area {
  transform: translate(-50%, -50%) scale(1.5);
 }
 
-.modal-area {
+.modal-order__area {
  position: absolute;
  padding: 40px;
  width: 528px;
@@ -902,7 +869,7 @@ a {
  background-color: var(--thirdy-color);
 }
 
-.modal-title {
+.modal-form__title {
  margin-bottom: 12px;
  font-weight: 700;
  font-size: 20px;
@@ -912,7 +879,7 @@ a {
  color: var(--primary-color);
 }
 
-.modal-inputbox {
+.modal-form__inputbox {
  position: relative;
  display: flex;
  flex-direction: column;
